@@ -6,28 +6,32 @@
     
 }
 body {
-  background-color:rgb(128, 111, 85);
-
+  background-color:#620a0ae6;
+background-image: url('blob-scatter-haikei.svg');
+background-size:cover;
+background-repeat:initial;
 }
 .container {
     width: 600px;
     min-height:200px;
     margin:auto;
-    margin-top: 50px;
+    margin-top: 6em;
     border: 1px solid #333;
+    box-shadow:0em 0em 10px 5px #333;
     padding:1%;
     border-radius:5px;
-    background-color: #eceaea;
+    background-color: #e0c6b1;
 }
 .inputBox {
     margin:auto;
     width:50%;
 }
 input {
-    height: 1.8em;
+    height: 2em;
     width: 135px;
     margin-bottom: 10px;
     padding:0.5%;
+    padding-left:2%;
     border-radius:5px;
     
 }
@@ -35,17 +39,10 @@ input:last-of-type{
     width: 150px;
     padding:0;
 }
-.addBtn {
-width: 53px;
-height: 1.8em;
-border-radius: 5px;
-background-color: lightskyblue;
+input::placeholder {
+    color: black;
 }
-.addBtn:hover {
-    cursor: pointer;
-    width:60px;
-    height: 1.9em;
-}
+
 h1 {
     text-align: center;
     margin-bottom: 1em;
@@ -57,6 +54,19 @@ h2 {
 li {
     list-style: none;
     width: 30%;
+}
+.addBtn {
+font-weight: bolder;
+width: 57px;
+height: 1.8em;
+border-radius: 5px;
+background-color: rgba(135, 206, 250, 0.664);
+}
+.addBtn:hover {
+    cursor: pointer;
+    width:60px;
+    height: 1.9em;
+    color:white;
 }
 #completeBtn, #deleteBtn {
     height: 1.8em;
@@ -71,8 +81,9 @@ li {
     margin-right: 1.2em;
 }
 #deleteBtn {
-    background-color: rgb(252, 70, 70);
+    background-color: rgba(185, 53, 53, 0.897);
     color:#333;
+    align-self: flex-end;
 }
 #deleteBtn:hover, #completeBtn:hover {
     color: white;
@@ -103,3 +114,8 @@ footer {
     flex-direction: row;
     margin-bottom: 1em;
 }
+#errorMessage {
+    color: rgba(252, 70, 70, 0.863);
+    text-align: center;
+    font-size: 1.2em;
+  }
