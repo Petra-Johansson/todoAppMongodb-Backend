@@ -22,8 +22,8 @@ router.post('/createTask', async (req, res) => {
         await task.save();
         res.send(task);
     } else {
-        res.status(400);
-        res.send({ error: "Fields can not be left blank."})
+        res.status(400).send({ error: "Fields can not be left blank."})
+      
     }
 
 });
