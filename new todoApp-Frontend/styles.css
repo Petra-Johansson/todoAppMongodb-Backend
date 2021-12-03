@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+body {
+  background-color:rgb(128, 111, 85);
+
+}
+.container {
+    width: 600px;
+    min-height:200px;
+    margin:auto;
+    margin-top: 50px;
+    border: 1px solid #333;
+    padding:1%;
+    border-radius:5px;
+    background-color: #eceaea;
+}
+.inputBox {
+    margin:auto;
+    width:50%;
+}
+input {
+    height: 1.8em;
+    width: 135px;
+    margin-bottom: 10px;
+    padding:0.5%;
+    border-radius:5px;
+    
+}
+input:last-of-type{
+    width: 150px;
+    padding:0;
+}
+.addBtn {
+width: 53px;
+height: 1.8em;
+border-radius: 5px;
+background-color: lightskyblue;
+}
+.addBtn:hover {
+    cursor: pointer;
+    width:60px;
+    height: 1.9em;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+h2 {
+    margin:0.5em 0;
+    border-bottom: 1px dashed #333;
+}
+li {
+    list-style: none;
+    width: 30%;
+}
+#completeBtn, #deleteBtn {
+    height: 1.8em;
+    width: 25px;
+    border-radius: 50%;
+    border: 0.2px solid #555;
+    font-weight:bolder;
+}
+#completeBtn {
+    background-color: lightgreen;
+    color: #333;
+    margin-right: 1.2em;
+}
+#deleteBtn {
+    background-color: rgb(252, 70, 70);
+    color:#333;
+}
+#deleteBtn:hover, #completeBtn:hover {
+    color: white;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+}
+.deadline {
+    font-size:0.8em;
+}
+#taskId, #completeId{
+    display: none;
+}
+footer {
+    
+    margin-top: 3em;
+    display:flex;
+    justify-content: space-between;
+    font-size:0.8em;
+}
+
+#taskBox{
+    display:flex;
+    flex-direction: column;
+}
+#taskDiv, #completediv {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headerBox">
+            <h1>TODO's</h1>
+        </div>
+<form action="/createTask" method="post">
+<div class="inputBox">
+    <input type="input" name="user" id="userInput" required autofocus placeholder="Name" />
+    <input type="input" name="task" id="taskInput" required placeholder="Add task" /> <br>
+    <label for="deadline" name="deadline" class="deadline">Deadline:</label>
+    <input type="date" name="deadline" min="2021-12-02" max="2022-02-28" id="deadLineInput" required />
+    
+    <button onClick="createTask()" class="addBtn" type="submit">ADD</button>
+</div>
+</form>
+
+<div id="taskBox">
+    <h2 id="todoHeading">What to do</h2>
+    </div>
+
+<div id="completeBox">
+    <h2 id="completeHeading">Completed</h2>
+</div>
+
+<footer>
+<p class="showDate">Todays date is:
+    <script> document.write(new Date().toLocaleDateString());</script>
+  </p>
+  <span class="endSpan">Don't forget to finish your tasks in time!</span>
+</footer>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
